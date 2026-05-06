@@ -37,3 +37,7 @@ def streak(name):
         else:
             break
     print(f"{name} streak: {n}")
+
+if __name__ == "__main__":
+    cmd, name = sys.argv[1], sys.argv[2]
+    {"add": add, "check": check, "streak": streak}[cmd](name)
